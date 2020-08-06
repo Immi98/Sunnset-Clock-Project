@@ -1,0 +1,119 @@
+/* Normalize */
+*{
+    box-sizing: border-box;
+}
+/* End normalize */
+
+/* Body Background */
+body{
+    background-color: rgba(227, 99, 0, 1);
+    z-index: 0;
+}
+/* End Body Background */
+
+/* Clock */
+.clock{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border: 20px solid #000; */
+    border-radius: 50%;
+    box-shadow: 0 0 200px 200px rgba(255, 165, 0, 0.8);
+    margin: 150px auto;
+    /* transform: rotate(30deg); */
+  }
+  .sec{
+    position: absolute;
+    width: 6px;
+    height: 50%;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 50%;
+    left: -3px;
+    transform-origin: center 80%;
+    z-index: 8;
+  }
+  .min{
+    position: absolute;
+    width: 6px;
+    height: 35%;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-top: 25%;
+    margin-left: 50%;
+    left: -3px;
+    transform-origin: center 71%;
+  }
+  .hr{
+    position: absolute;
+    width: 6px;
+    height: 25%;                  /*x = 25%*/
+    background-color: #FFF;
+    border-radius: 50%;
+    margin-top: 35%;
+    margin-left: 50%;
+    left: -3px;
+    transform-origin: center 60%; /*100% - (10%/100% * x)*/
+  }
+  .center{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-top: 50%;
+    margin-left: 50%;
+    top: -5px;
+    left: -5px;
+    z-index: 9;
+  }
+  /* 90deg */
+  .frame-1, .frame-2, .frame-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: -1px;
+  /*   border-radius: 50%; */
+    /* border: 1px solid #000000; */
+  }
+  .frame-2{
+    transform: rotate(30deg);
+    /* border: 1px solid red; */
+  }
+  .frame-3{
+    transform: rotate(60deg);
+  }
+  .first{
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+  }
+  .second{
+    position: absolute;
+    top: -10px;
+    margin-top: 50%;
+    right: 1.5%;
+  }
+  .third{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2.5px;
+  }
+  .fourth{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 1.5%;
+  }
+  .r-1{
+    /* border: 1px solid #000; */
+    transform: rotate(-30deg);
+  }
+  .r-2{
+    /* border: 1px solid #000; */
+    transform: rotate(-60deg);
+  }
